@@ -1,9 +1,11 @@
+import boto3
+import json
+
 aws_access_key_id = 'some_access_key'
 aws_secret_access_key = 'some_secret_key'
 
 iamClient = boto3.client('iam', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
 
-import json
 
 role_name = ['role1', 'role2']
 
